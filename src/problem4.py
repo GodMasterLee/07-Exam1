@@ -2,8 +2,8 @@
 Exam 1, problem 4.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  March 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Bowen Li.  March 2018.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -124,7 +124,7 @@ def problem4(m):
                                       namely: 2 and 5.
       -- problem4(24)  returns 6  because 24 has 6 non-trivial factors,
                                       namely: 2, 3, 4, 6, 8, and 12.
-      -- problem4(13)  returns 0  because  7 has no non-trivial factors.
+      -- problem4(13)  returns 0  because 13 has no non-trivial factors.
       -- problem4(30)  returns 6  because 30 has 6 non-trivial factors,
                                       namely: 2, 3, 5, 6, 10, and 15.
       -- problem4(360) returns 22
@@ -135,9 +135,14 @@ def problem4(m):
                                  (i.e., it is prime)
     """
     # -------------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # Done: 7. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    sum = 0
+    for k in range(m):
+        if m % (k + 1) == 0:
+            sum = sum + 1
+    return sum - 2
 
 
 # -----------------------------------------------------------------------------
